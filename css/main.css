@@ -1,10 +1,14 @@
 
-
+body {
+}
+#navcolor {
+	background-color: brown;
+}
 .carousel-caption {
 	position: absolute;
 	top:50%;
-	color: grey;
-	
+	color: #ffab00;
+	font-family: brush script mt;
 }
 .jumbotron {
 	
@@ -27,11 +31,13 @@ p.lead {
 	font-family: brush script mt;
 	text-align: center;
 }
-h6 {
-	font-family: brush script mt;
+h6.skills {
+	font-family
 }
 #about {
-	background-color: #ecf0f1;
+	background-color:;
+	margin-top: 80px;
+	
 }
 h2 {
 	text-align: center;		
@@ -74,9 +80,8 @@ hr.my-3 {
 	margin-right: 0px;
 }
 .fa-phone {
-	font-size: 20px;
-	float: left;
-	margin-left: 90px;
+	font-size: 15px;
+	color: green;
 }
 .fa-users {
 	font-size: 30px;
@@ -84,32 +89,59 @@ hr.my-3 {
 	margin-left: 170px;
 }
 .fa-facebook {
-	font-size: 30px;
+	font-size: 15px;
 	color: #3b5998;
 }
 .fa-instagram {
-	font-size: 30px;
+	font-size: 15px;
 	color: #517fa4;
 }
 .fa-twitter {
-	font-size: 30px;
+	font-size: 15px;
 	color: #00aced;
 }
 .fa-google {
-	font-size: 30px;
+	font-size:15px;
 	color: #dd4b39;
 }
 h5.address {
 	margin-right: 10px;
 }
-
-
-
-
-
-
-
-
+h6.footernav {
+	margin-top: 50px;
+}
+#navoptions {
+	font-size: 20px;
+}
+.fa-home {
+	color: yellow;
+}
+a {
+	color: white;
+}
+a:hover {
+	text-decoration: none;
+	color: grey;
+	
+	
+}
+p.html5 {
+	text-align: right;
+}
+#about-title {
+	font-size: 50px;
+	margin-top: 10px;
+	margin-left: 100px;
+	
+}
+#myskills {
+	color:white;
+	background-color: black;
+}
+.myskills {
+	float: right;
+	margin-top: 200px;
+}
 
 
 
