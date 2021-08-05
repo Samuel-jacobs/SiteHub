@@ -116,6 +116,9 @@ a.nav-link {
 .carousel-caption:first-child  {
 	font-size: 40px;
 }
+.cap {
+	color: #1F618D;
+}
 /*styling all the buttons and adding an animation effect  on them */
 .btn {
 	border-radius: 20px;
