@@ -31,10 +31,10 @@
 				<a class="nav-link" href="about.html"> About </a> 
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#services"> Services </a> 
+				<a class="nav-link" href="index.html#services"> Services </a> 
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#projects"> Projects </a> 
+				<a class="nav-link" href="index.html#projects"> Projects </a> 
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="contact.html"> Contact </a> 
@@ -51,17 +51,22 @@
 	</div>
 	<div class="carousel-caption" data-aos="zoom-in"  data-aos-delay="50" data-aos-duration="1000">
 		<h1>Contact Me</h1>
-		<button type="button" class="btn btn0 mt-5 pl-4 pr-4"><a href="index.html"> Back Home </a> </button> 
-		<button type="button" class="btn btn0 mt-5 pl-4 pr-4"><a href="contact.html"> About </a> </button> 
+		<button type="button" class="btn btn0 mt-3 pl-4 pr-4"><a href="index.html"> Home </a> </button> 
+		<button type="button" class="btn btn0 mt-3 pl-4 pr-4"><a href="contact.html"> contact </a> </button> 
 	</div>
 </div>
 </header>
+
+<!-- button to scroll bact to the top -->
+<button id="topBtn" onclick="topFunction()" title="Back to top"> <i class="fa fa-caret-up"></i> </button>
+
+
 <section id="contact">
 	<div data-aos="zoom-out" data-aos-offset="200"  data-aos-delay="50" data-aos-duration="1000">
 		<h1 class="text-center pb-3"> Get In Touch </h1>
-		<p class="text-center intro pb-5"> I'm glad you stuck around. If you'd like to contact me for a job opportunity or just to have a chat,
+		<p class="intro pb-5"> I'm glad you stuck around. If you'd like to contact me for a job opportunity or just to have a chat,
 		please kindly fill the form below or send a direct email. You can also find me on social media.</br>
-		 Thanks for stopping by. Cheers! :) </p>
+		 Thanks for stopping by.</br>  Cheers! :) </p>
 	</div>
 <form action="POST" data-netlify="true">
 	<div class="row">
@@ -134,45 +139,13 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="control.js"> </script>
 	<script>
 		$(window).scroll(function(){
 		$('nav').toggleClass('scrolled', $(this).scrollTop() > 300);
 		});
 	</script>
-	<script>
-		var prevScrollpos = window.pageYOffset;
-		window.onscroll = function() {
-		var currentScrollPos = window.pageYOffset;
-		if (prevScrollpos > currentScrollPos) {
-		document.getElementById("navbar").style.top = "0";
-		} else {
-		document.getElementById("navbar").style.top = "-50px";
-		}
-		prevScrollpos = currentScrollPos;
-		}
-	</script>
-	<script>
-		//Get the button
-		var mybutton = document.getElementById("topBtn");
-
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-
-		function scrollFunction() {
-			if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-			mybutton.style.display = "block";
-			} else {
-			mybutton.style.display = "none";
-			}
-		}
-
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-
-	</script>
+	
 	
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>

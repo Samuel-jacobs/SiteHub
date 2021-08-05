@@ -108,7 +108,6 @@ a.nav-link {
 }
 /* animate the banner caption*/
 .carousel-caption {
-	float: left;
 	top: 30%;
 	animation: carousel-load 1000ms ease-in;
 	transform: scale(0);
@@ -282,23 +281,27 @@ footer a.social-link:link {
 		text-align: center;
 		
 	}
+	.carousel-caption {
+		padding: 0;
+	}
 	img.image1 {
-		height: 500px;
+		height: 600px;
 		width: 100%;
 	}
 	#about {
-		padding-bottom: 100px;
+		padding: 100px 30px;
 		font-size: 20px;
 	}
 	.about-text {
 		margin: 0 auto;
-		max-width: 80%;
+		
 	}
 	#services {
-		padding: 50px;
+		padding: 50px 30px;
 	}
 	.card {
-		height: 250px;
+		height: 100%;
+		font-size: 20px;
 	}
 	#projects {
 		padding-left: 30px;	
@@ -385,7 +388,8 @@ footer a.social-link:link {
 		padding-right: 100px;
 	}
 	.card {
-		
+		height: 100%;
+		font-size: 20px;
 	}
 	#projects {
 		padding: 50px;
@@ -410,6 +414,12 @@ footer a.social-link:link {
 		margin-bottom: 70px;
 	}
 	.fylo {
+		padding-left: 30px; 
+		padding-right: 30px;
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+	.portfolio {
 		padding-left: 30px; 
 		padding-right: 30px;
 		margin-top: 70px;
@@ -474,6 +484,7 @@ footer a.social-link:link {
 		padding-right: 50px;
 	}
 	.card {
+		height: 100%;
 		font-size: 18px;
 	}
 	#projects {
@@ -548,7 +559,8 @@ footer a.social-link:link {
 		padding:50px 150px;
 	}
 	.card {
-		font-size: 16px;
+		font-size: 20px;
+		height: 100%;
 	}
 	.card1, .card3{
 		margin-right: 20px; 
