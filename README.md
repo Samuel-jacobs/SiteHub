@@ -54,8 +54,8 @@ This page contains the same form on the contact section of the home page.
 ### Useful resources
 
 
-- [resource 1](https://www.w3schools.com) - This helped me when I got stuck trying to remember a syntax or a css style.
-- [resource 2](https://www.stackoverflow.com) - The community of developers on stackoverflow helped me to fix bugs when
+- [w3chools](https://www.w3schools.com) - This helped me when I got stuck trying to remember a syntax or a css style.
+- [stackoverflow](https://www.stackoverflow.com) - The community of developers on stackoverflow helped me to fix bugs when
  they came up 
 
 
