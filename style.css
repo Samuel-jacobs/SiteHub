@@ -35,7 +35,7 @@ p {
 li {
 	font-family: 'Indie Flower', cursive;
 }
-}
+
 .contact span  {
 	font-family: 'Palette Mosaic', cursive; 
 }
@@ -62,10 +62,7 @@ section h1, h2, h3, h4,h5, h6{
 	color: #1F618D;
 	font-family: 'Palette Mosaic', cursive;
 }
-.bg {
-	transition: 0.5s ease;
-	background-color: transparent
-}
+    
 .nav-link {
 	position: relative;
 }
@@ -103,23 +100,34 @@ nav {
 a.nav-link {
 	color: white;
 }
+
+/* styling navbar on scroll */
 .bg.scrolled {
 	background-color: #7FB3D5;
 }
-/* animate the banner caption*/
-.carousel-caption {
+
+/* style and animate the banner caption*/
+.carousel-container {
+	text-align: center;
+}
+
+.header-caption {
 	top: 30%;
+	padding-top: 20%;
+	text-align: center;
 	animation: carousel-load 1000ms ease-in;
 	transform: scale(0);
 	animation-fill-mode: forwards;
+	color: white;
 }
-.carousel-caption:first-child  {
-	font-size: 40px;
-}
+
+
 .cap {
 	color: #1F618D;
 }
 /*styling all the buttons and adding an animation effect  on them */
+
+/* btn = all buttons */
 .btn {
 	border-radius: 20px;
 	position: relative;
@@ -138,6 +146,8 @@ a.nav-link {
 	border-radius: 20px;
 	transition: transform 300ms ease-in;
 }
+
+/* btn0 = header caption and contact section button : adding zoom in animation on hover*/
 .btn0::after {
 	border-radius: 20px;
 	background-color: #D6EAF8;
@@ -154,6 +164,8 @@ a.nav-link {
 .btn0:hover {
 	color: #7FB3D5;
 }
+
+/* btnn = services button : adding zoom in animation on button hover */
 .btnn::after {
 	border-radius: 20px;
 	background-color: #7FB3D5;
@@ -172,15 +184,23 @@ a.nav-link {
 	color: #D6EAF8;
 }	
 
+/* styling the waves image */
 .wave-container {
 	background-color: #D6EAF8;
 	margin-bottom: -2px;
 }
+.wave-container1 {
+	background-color: #D6EAF8;
+	margin-bottom: -2px;
+}
+
+/*styling the about section */
 #about {
 	padding-top: 100px;
 	background-color: #D6EAF8;	
 }
 
+/* styling the services section */
 #services {
 	background-color: #7FB3D5; 
 }
@@ -198,6 +218,8 @@ img.service-icon {
 	height: 250px;
 	background-color: #D6EAF8;
 }
+
+/* styling the projects section */
 #projects {
 	background-color: #D6EAF8;
 	padding-left: 50px;
@@ -207,11 +229,7 @@ img.service-icon {
 	font-size: 20px;
 }
 
-.wave-container1 {
-	background-color: #D6EAF8;
-	margin-bottom: -2px;
-}
-
+/*styling the contact section */
 #contact {
 	background-color: #7FB3D5; 
 }
@@ -222,6 +240,8 @@ img.service-icon {
 .socials a.social-link:link {
 	color: black;
 }
+
+/* styling the footer section */
 #footer {
 	padding: 0 30px 20px 30px;
 	text-align: center;
@@ -273,6 +293,8 @@ footer a.social-link:link {
 .attribution {
 	font-size: 13px;	
 }
+
+/* styling small screens */
 @media screen and (max-width: 576px){
 	.nav-link:hover::after {
 		transform: scaleX(0.2);
@@ -282,15 +304,14 @@ footer a.social-link:link {
 		padding-bottom: 30px;
 		background-color: #7FB3D5;
 		text-align: center;
-		
 	}
-	.carousel-caption {
-		padding: 0;
+	.header-caption {
+		padding-top: 50%;  
 	}
 	img.image1 {
-		height: 600px;
-		width: 100%;
+		height: 100vh;
 	}
+
 	#about {
 		padding: 100px 30px;
 		font-size: 20px;
@@ -299,6 +320,7 @@ footer a.social-link:link {
 		margin: 0 auto;
 		
 	}
+
 	#services {
 		padding: 50px 30px;
 	}
@@ -306,40 +328,35 @@ footer a.social-link:link {
 		height: 100%;
 		font-size: 20px;
 	}
+
 	#projects {
-		padding-left: 30px;	
-		padding-right: 30px;
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding: 50px 30px;
 	}
 	img.project-image {
 		width: 100%;
 		height: 250px;
 	}
-	.adventura {
+	.adventura, .portfolio {
 		margin-bottom: 70px;
 	}
-	.sunnyside {
+	.sunnyside, .fylo {
 		margin-top: 70px;
 		margin-bottom: 70px;
 	}
-	.fylo {
-		margin-top: 70px;
-		margin-bottom: 70px;	
-	}
-	.portfolio {
-		margin-bottom: 70px;
-	}
+	
 	.project-text {
 		background-color: #7FB3D5;
 		padding-top: 20px;
 		padding-bottom: 50px;
 		margin: 0 15px;
-		
 	}
+
+	/*hide lines on small screens */
 	hr {
 		display: none;
 	}
+
+
 	#contact {
 		padding: 50px;
 	}
@@ -372,7 +389,7 @@ footer a.social-link:link {
 		vertical-align: middle;
 	}
 	img.image1 {
-		height: 500px;
+		height: 100vh;
 		width: 100%;
 	}
 	
@@ -386,6 +403,7 @@ footer a.social-link:link {
 		max-width: 90%;
 		margin: 0 auto;
 	}
+
 	#services {
 		padding-left: 100px;
 		padding-right: 100px;
@@ -410,18 +428,13 @@ footer a.social-link:link {
 		margin-bottom: 70px;
 	}
 	
-	.sunnyside {
+	.sunnyside, .fylo {
 		padding-left: 30px; 
 		padding-right: 30px;
 		margin-top: 70px;
 		margin-bottom: 70px;
 	}
-	.fylo {
-		padding-left: 30px; 
-		padding-right: 30px;
-		margin-top: 70px;
-		margin-bottom: 70px;
-	}
+
 	.portfolio {
 		padding-left: 30px; 
 		padding-right: 30px;
@@ -434,6 +447,8 @@ footer a.social-link:link {
 		margin: 0 15px;
 		
 	}
+
+
 	#contact {
 		padding: 50px;
 	}
@@ -452,6 +467,8 @@ footer a.social-link:link {
 		transform: scale(1);
 	}
 }
+
+/* between medium screens and large screens */
 @media screen  and (max-width: 991px) and (min-width: 768px) {
 	.btn1 {
 		border: 2px solid #7FB3D5;
@@ -469,7 +486,7 @@ footer a.social-link:link {
 		width: 100%;
 	}
 	img.image1 {
-		height: auto;
+		height: 100vh;
 		width: 100%;
 	}
 	#about {
@@ -523,9 +540,10 @@ footer a.social-link:link {
 		margin-top: 50px;
 		padding-top: 50px;
 	}
-	.portfolio {
-	}
+	
 }
+
+/* large screens */
 @media screen and (min-width: 992px){
 	.btn1 {
 		border: 2px solid #7FB3D5;
@@ -542,7 +560,7 @@ footer a.social-link:link {
 		font-size: 70px;
 	}
 	img.image1 {
-		height: auto;
+		height: 100vh;
 		width: 100%;
 	}
 	.welcome {
@@ -588,13 +606,7 @@ footer a.social-link:link {
 		padding-bottom: 50px;
 		
 	}
-	.sunnyside {
-		margin-top: 50px;
-		padding-top: 50px;
-		margin-bottom: 50px;
-		padding-bottom: 50px;
-	}
-	.fylo {
+	.sunnyside, .fylo {
 		margin-top: 50px;
 		margin-bottom: 50px;
 		padding-top: 50px;
@@ -611,10 +623,7 @@ footer a.social-link:link {
 		left: 50%;
 	}
 	#contact {
-		padding-top: 50px;
-		padding-left: 100px;
-		padding-right: 100px;
-		padding-bottom: 50px;
+		padding: 50px 100px;
 	}
 }
 
