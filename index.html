@@ -1,86 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SitHub Web Solutions</title>
+	<head>
+		<title> DigitalHub Web Solutions | Web Design/Development Agency</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		 <!--fontawesome-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
 
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Moonrocks&display=swap');
-		body {
-			padding: 0;
-			margin: 0;
-			background-color: #D6EAF8;
-			height: 100vh;
-		}
-		p {
-			font-family: 'Patrick Hand', cursive;
-			font-weight: bold;
-		}
-		h1 {
-			font-family: 'Rubik Moonrocks', cursive;
-			font-size: 3rem;
-		}
-		
-		.construction-image img {
-			height: 100%;
-			width: 100%;
-		}
-		.construction-text a {
-			color: #1da1f2;
-			text-decoration: none;;
-		}
-		@media screen and (max-width: 768px) {
-			.header {
-				padding: 20px;
-			}
-			.construction-text {
-				text-align: center;
-				padding-inline: 20px;
-				padding-bottom: 20px;
-			}
-		}
-
-		@media screen and (min-width: 768px) {
-			.header {
-				padding: 50px;
-			}
-			#construction {
-				display: flex;
-				flex-direction: row-reverse;
-				padding-inline: 50px;
-				
-			}
-			.construction-image {
-				width: 60%;
-			}
-			.construction-text {
-				width: 40%;
-				align-self: center;
-			}
-			
-		}
-	</style>
-</head>
-<body>
-	<main id="main">
-		<div class="header">
-			<img src="SiteHub-logo.png" alt="sitehub logo">
+		<!--Animation on scroll css-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="loader"   style="display:none">
+			<img src="images/rocket2.png" alt="">
+			<p>loading.....</p>
 		</div>
-		<section id="construction">
-			<div class="construction-image">
-				<img src="construction.png" alt="site maintenance image">
+		<header id="header" class="animate-bottom" >
+			<div class="topnav" id="myTopnav">
+				<div class="nav-logo">
+					<img src="images/logo1.png" class="logo-img" alt="">
+				</div>
+				<div class="overlay" id="myNav">
+					<div class="overlay-top">
+						
+						<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()"><img src="images/icon-close.svg" alt="close icon"></a>
+					</div>
+					<div class="nav-links">
+						<a class="navlink" href="#services">Services</a>
+						<a class="navlink" href="#work">Work</a>
+						<a class="navlink" href="form.html">Contact</a>	
+					</div>
+				</div>
+				<span onclick="openNav()" class="openBtn"><img src="images/icon-hamburger.svg"  alt="hamburger image"></span>
+			 
 			</div>
-			<div class="construction-text">
-				<h1>We're Under Construction!!</h1>
-				<p>Hello friend! We are happy you stopped by &#128512;. Unfortunately We're kind of undergoing some renovation at the moment &#128556;. We promise we'd be done by next the time you visit (which we hope is soon) and you'd definitely like what you see.</p>
-				<p>In the mean time, if you'd like a chat feel free to send a dm on <a href="https://www.twitter.com/_samueljacobs_">twitter</a> or an <a href="mailto:jacobssamuel57@gmail.com">email.</a> Thank you for stopping by. See you soon. &#128513;</p>
+		</header>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-arrow-alt-circle-up"></i></button>
+		<main id="main" class="animate-bottom" >
 
+			<!--About section-->
+			<section id="banner">
+				<div class="banner-image" data-aos="fade-up" 
+				data-aos-easing="linear"
+				data-aos-duration="4000">
+					<img src="images/start-up1.png" alt="startup image">
+				</div>
+				<div class="banner-text" data-aos="fade-up" 
+				data-aos-easing="linear"
+				data-aos-duration="3500">
+					<h1 class="dark-blue font-weight-bold uppercase">We build <span class="text1">Powerful</span>, <span class="text2">Captivating</span>, and <span class="text3">Modern</span> Websites</h1>
+					<p class=" p-color">We help brands and businesses reach their full potential by providing them with a compelling online presence. <br>
+					Ready to take your <span class="font-weight-bold">Brand</span> or <span class="font-weight-bold">Business</span> to greater heights??</p>
+					<a href="form.html" class="contact-btn">Lets get Started <i class="far fa-arrow-alt-circle-right"></i></a>
+				</div>
+			</section>
+			<section id="about-us">
+				<div class="about-image" data-aos="flip-right" data-aos-duration="3500">
+					<img src="images/team1.png" alt="team of devs">
+				</div>
+				<div class="about-text" data-aos="fade-up" data-aos-duration="3000">
+					<h2 class="title dark-blue pb-3">Who We Are</h2>
+					<p class="p-color">We are a group of young creatives that are dedicated to helping new and old businesses to harness the full power of the digital era by providing web related solutions.</p>
+					<p class="p-color">We have alot of experience with designing and building powerful websites, writing compelling content that sells, marketing products and services with the use of every available digital marketing tool like social media and google ads.
+					<br><br>
+					We are a budding agency and we make it our top priority to make it possible for our clients to benefit fully from the continued global shift towards technology and online activities.
+					</p>
+				</div>
+			</section>
+			<!--End of about section-->
 
-			</div>
-			
-		</section>
-	</main>
-</body>
+			<!--start of service section-->
+			<article id="services">
+				<h2 class="title dark-blue font-weight-bolder">What We Do</h2>
+				<section class="web-development service-wrapper">
+					<div class="web-dev-img service-image" data-aos="flip-left" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<img src="images/webdev1.png" alt="web development illustration">
+					</div>
+					<div class="web-dev-text service-text" data-aos="fade-up" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<h3 class="title blue pb-3">Web Development</h3>
+						<p class="p-color">We build powerful websites where our clients can showcase their services and products to both local and international audiences, in an appealing and attractive manner.</p>
+						<p class="p-color">We build all kinds of websites including landing pages for ad campaigns, portfolio websites, school/educational websites, organisation or company websites, NGO websites etc.</p>
+					</div>
+				</section>
+				<img src="images/shredded-paper-bottom.svg" alt="">
+				<section class="e-commerce service-wrapper">
+					<div class="ecommerce-image service-image" data-aos="flip-right" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<img src="images/online-store.png" alt="ecommerce illustration">
+					</div>
+					<div class="ecommerce-text service-text" data-aos="fade-up" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<h3 class="title blue pb-3">E-commerce</h3>
+						<p class="p-color">We build online stores using platforms like <span>shopify</span>  or <span>woocommerce</span> where clients can sell their products directly to customers accross the globe. These online stores are equipped with features that make it easy for store owners to give invoices and recieve payment securely, get new orders directly in their mails among many other features.</p>	
+					</div>
+					
+				</section>
+				<img src="images/shredded-paper-top.svg" alt="">
+				<section class="digital-marketing service-wrapper">
+					<div class="digital-marketing-image service-image" data-aos="flip-left" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<img src="images/digital-marketing1.png" alt="digital marketing illustration">
+					</div>
+					<div class="digital-marketing-text service-text" data-aos="fade-up" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<h3 class="title blue pb-3">Digital Marketing</h3>
+						<p class="p-color">We run and manage paid or unpaid advertising campaigns for businesses and brands to promote their business or brand in order to gain more audience and generate more sales. These advertising campaigns may include social media advertising, google advertising, SEO advertising, etc </p>
+					</div>
+					
+				</section>
+				<img src="images/shredded-paper-bottom.svg" alt="">
+				<section class="seo service-wrapper">
+					<div class="seo-image service-image" data-aos="flip-right" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<img src="images/content-writing.png" alt="seo illustration">
+					</div>
+					<div class="seo-text service-text" data-aos="fade-up" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<h3 class="title blue pb-3">Content Writing</h3>
+						<p class="p-color">We write engaging and captivating articles and website content for our clients to properly describe their products or services to their audiences in a compelling manner. We write Search Engine Optimized content with the proper keywords to enable the websites and articles turn up prominently in organic searches. </p>
+					</div>
+				</section>
+				<img src="images/shredded-paper-top.svg" alt="">
+			</article>
+			<!--end of service section-->
+
+			<!--Start of Work section-->
+			<article id="work">
+				<h2 class="title uppercase dark-blue pb-5 font-weight-bolder">Our Most Recent Works</h2>
+				<section class="work-container">
+
+				
+					<div class="pocha work-wrapper" data-aos="fade-up" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<div class="pocha-image work-image">
+							<img src="images/pocha.png" class="shadow" alt="">
+						</div>
+						<div class="pocha-text work-text">
+							<h4>Pocha Travels and Tours</h4>
+							<p>Travel Agency Website</p>
+							<a href="https://samuel-jacobs.github.io/travelsandtours" class="work-btn">Visit Site <i class="far fa-arrow-alt-circle-right"></i></a>
+						</div>
+						<div class="work-caption">
+							<h4><a href="https://samuel-jacobs.github.io/travelsandtours">Pocha Travels and Tours</a></h4>
+							<div class="caption-flex">
+								<p>Design + Development + Content writing + SEO</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="hadassahs-glam work-wrapper" data-aos="fade-up" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<div class="hadassahs-image work-image">
+							<img src="images/Hadassahsglam.png" class="shadow" alt="">
+						</div>
+						<div class="hadasshah-text work-text">
+							<h4>Hadassah's Glam</h4>
+							<p>Make Up Artist website</p>
+							<a href="https://www.hadassahsglam.com" class="work-btn">Visit Site <i class="far fa-arrow-alt-circle-right"></i></a>
+						</div>
+						<div class="work-caption">
+							<h4><a href="https://www.hadassahsglam.com">Hadassahs Glam</a></h4>
+							<div class="caption-flex">
+								<p>Design + Development + Content writing + SEO</p>
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="adventura-dulcemio work-wrapper" data-aos="fade-up" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<div class="adventura-image work-image">
+							<img src="images/easybanking.png" class="shadow" alt="">
+						</div>
+						<div class="adventura-text work-text">
+							<h4>Adventura Dulcemio Wines</h4>
+							<p>Wine distribution website</p>
+							<a href="#" class="work-btn">Visit Site <i class="far fa-arrow-alt-circle-right"></i></a>
+						</div>
+						<div class="work-caption">
+							<h4><a href="#">Adventura Dulcemio Wines</a></h4>
+							<div class="caption-flex">
+								<p>Design + Development + Content writing + SEO</p>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="space-travel work-wrapper" data-aos="fade-up" 
+					data-aos-easing="linear"
+					data-aos-duration="3500">
+						<div class="space-travel-image work-image ">
+							<img src="images/space-desktop.png" class="shadow" alt="">
+						</div>
+						<div class="space-travel-text work-text">
+							<h4>Space Travels</h4>
+							<p>space travels website</p>
+							<a href="https://samuel-jacobs.github.io/spacetravels" class="work-btn">Visit Site <i class="far fa-arrow-alt-circle-right"></i></a>
+						</div>
+						<div class="work-caption">
+							<h4><a href="https://samuel-jacobs.github.io/spacetravels">Space Travels</a></h4>
+							<div class="caption-flex">
+								<p>Development + Hosting</p>
+							</div>
+							
+						</div>
+						
+					</div>
+				</section>
+			</article>
+			<!--End of work section-->
+			<article id="reason">
+				<h2 class="title dark-blue text-center pb-5">Why Work With Us</h2>
+				<section class="reason-section mb-5">
+					
+					<div class="reason-list">
+						<h5 class="pb-3">Here's why you would like to work with us</h5>
+						<p><i class="far fa-arrow-alt-circle-right"></i> We are 100% Reliable</p>
+						<p><i class="far fa-arrow-alt-circle-right"></i> We are 100% Professional</p>
+						<p><i class="far fa-arrow-alt-circle-right"></i> We are 100% Efficient</p>
+						<p><i class="far fa-arrow-alt-circle-right"></i> We are 100% competent</p>
+						<p><i class="far fa-arrow-alt-circle-right"></i> We Offer full support and guidance</p>
+						<p><i class="far fa-arrow-alt-circle-right"></i> Client satisfaction is our utmost priority</p>
+					</div>
+				</section>
+				<section class="reason-section">
+					
+					<div class="reason-list">
+						<h5 class="pb-3">In addition to that Our websites are</h5>
+						<p><i class="far fa-arrow-alt-circle-right"></i> user friendly</p>
+						<p><i class="far fa-arrow-alt-circle-right"></i> moblile first and fully responsive</p>
+						<p><i class="far fa-arrow-alt-circle-right"></i> optimized to load fast</p>
+						<p><i class="far fa-arrow-alt-circle-right"></i> Search Engine Optimized</p>
+						<p><i class="far fa-arrow-alt-circle-right"></i> both atttractive and professional</p>
+						
+						<p><i class="far fa-arrow-alt-circle-right"></i> Modern and futuristic</p>
+						
+					</div>
+				</section>
+			</article>
+			<!-- start of Testimonial section-->
+			<article id="testimonials">
+				<h2 class="title uppercase font-weight-bolder">Hear From Our Happy Clients</h2>
+				<section class="testimonial-wrapper">
+					<div id="carousel" class="carousel slide" data-ride="carousel">
+						<ul class="carousel-indicators">
+							<li data-target="#carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel" data-slide-to="1"></li>
+							<li data-target="#carousel" data-slide-to="2"></li>
+						</ul>
+
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="card-content shadow">
+									<p>"I really liked working with DigitalHub, they were really professional and friendly. The website they built has been really useful for my makeup business and I hope to keep working with them in the future as I expand my business "</p>
+									<div class="client pt-4">
+										<h3 class="uppercase">Esther Adekunle</h3>
+										<p class="pt-2">CEO, Hadassahs Glam</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="card-content shadow">
+									<p>"These guys are amazing. They understood my ideas and were able to bring it to life in no time. They exceeded my expectations and I totally recommend them."</p>
+									<div class="client pt-4">
+										<h3 class="uppercase">Chucks</h3>
+										<p class="pt-2">Founder, Pocha Travels and Tours</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="card-content shadow">
+									<p>"They did a great job on my website. I have been getting more wine sales since the site went live and since we ran some social media ad campaigns. I hope to work with them again in the nearest    future"</p>
+									<div class="client pt-4">
+										<h3 class="uppercase">Ndubuisi Onyekachi</h3>
+										<p class="pt-2">CEO, Adventura Dulcemio Wines</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+
+						<a class="carousel-control-prev carousel-control" href="#carousel" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next carousel-control" href="#carousel" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+
+					</div>
+				</section>
+
+			</article>
+
+			<!--end of testimonial section-->
+
+			<footer id="footer" >
+				<div class="footer-wrapper">
+					<div class="footer-cta">
+						<h2 class="title f-color pb-4">Ready to Start your Project?</h2>
+						<a href="form.html" class="contact-btn">Lets Go!! <i class="far fa-arrow-alt-circle-right"></i></a>
+					</div>
+					<div class="footer-contact">
+						<h3 class="f-color pb-3 uppercase">Contact</h3>
+						<a href="tel:+2349078319927">09078319927</a>
+						<a href="tel:+2349160624543">09160624543</a>
+						<a href="mailto:digitalhubwebsolution@gmail.com">digitalhubwebsolutions@gmail.com</a>
+					</div>
+					<div class="footer-socials">
+						<h3 class="f-color pb-3 uppercase">Connect</h3>
+						<a href="https://web.facebook.com/digitalhubwebsolutions"><i class="fab fa-facebook"> </i></a>
+						<a href="http://"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.twitter.com/_samueljacobs_"><i class="fab fa-twitter"></i></a>
+						<a href="http://"><i class="fab fa-linkedin"></i></a>	
+					</div>
+				</div>
+				<p class="attribution">&copy; 2022 Copyright DigitalHub Web Solutions </p>
+			</footer>
+		</main>
+
+		<!--footer section-->
+		<!--Animate on scroll javascript-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		
+		<script src="control.js"></script>
+
+	
+		<script>
+			AOS.init();
+		</script>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
 </html>

@@ -1,0 +1,66 @@
+body {
+	background-color: hsl(192, 100%, 9%);
+}
+main {
+	padding-top: 50px;
+}
+a.navlogo {
+	display: block;
+}
+.form-intro {
+	color: white;
+	text-align: center;
+	padding-inline: 20px;
+}
+
+#get-started-form {
+	padding: 100px 50px;
+}
+
+label {
+	color: white;
+	
+}
+
+.form-control {
+	border: 1px solid hsl(0, 94%, 66%);
+	color: white;
+	background-color: hsl(192, 100%, 9%);
+}
+.form-item {
+	padding-bottom: 20px;
+}
+sup {
+	color: hsl(0, 94%, 66%);
+}
+.f-btn {
+	margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+	.navlink {
+		color: white;
+	}
+	.navlink:hover {
+		color: white;
+	}
+}
+@media screen and (min-width: 768px) {
+	.form-main, .form-intro {
+		width: 60%;
+		margin-inline: auto;
+	}
+	#get-started-form {
+		padding-inline: 0;
+	}
+	label {
+		font-size: 1.3rem;
+	}
+	.form-flex {
+		display: flex;
+		justify-content: space-between;
+	}
+	.form-item {
+		width: 49%;
+	}
+	
+}
