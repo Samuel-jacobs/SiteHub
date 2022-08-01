@@ -12,8 +12,12 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="form.css">
 	</head>
-	<body>
-		<header>
+	<body onload="loadingFunction()">
+		<div id="loader">
+			<img src="images/rocket2.png" alt="">
+			<p>loading.....</p>
+		</div>
+		<header id="header" style="display:none" class="animate-bottom">
 			<div class="topnav" id="myTopnav">
 				<div class="nav-logo">
 					<a href="index.html" class="navlogo logo-img"><img src="images/logo1.png" alt=""></a>
@@ -35,7 +39,7 @@
 			</div>
 		</header>
 		
-		<main>
+		<main id="main" style="display:none" class="animate-bottom">
 			<div class="form-intro">
 				<h1 class="pb-4">Lets Start a New Project Together</h1>
 				<p>We are happy you chose to work with us. We'd like to know how exactly we can help. Please fill the form below or send us an email at <a href="mailto:digitalhubwebsolutions@gmail.com">digitalhubwebsolutions@gmail.com</a> if you have further information for us and we'd get back to you ASAP. Cheers.</p>

@@ -51,7 +51,7 @@ function topFunction() {
 }
 
 //loading function
-		/*var myVar;
+		var myVar;
 			
 			function loadingFunction() {
 				myVar = setTimeout(showPage, 2000);
@@ -61,4 +61,4 @@ function topFunction() {
 				document.getElementById("loader").style.display = "none";
 				document.getElementById("main").style.display = "block";
 				document.getElementById("header").style.display = "block";
-			} */
+			} 
