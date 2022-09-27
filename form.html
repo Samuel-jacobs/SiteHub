@@ -68,20 +68,34 @@
 							<input type="text" class="form-control" placeholder="Company Name..." name="company-name" id="company-name" required>
 						</div>
 					</div>
-					
+					<div class="form-flex">
+						
 						<div class="form-item">
-							<label for="service">Please select a type of website <sup>*</sup></label>
+							<label for="source">How did you hear about us <sup>*</sup></label>
+							<select class="form-control" name="source" id="source" required> 
+								<option class="disabled"> --select an option--</option>
+								<option value="facebook">Facebook</option>
+								<option value="instagram">Instagram</option>
+								<option value="twitter">Twitter</option>
+								<option value="google">Google</option>
+								<option value="friend">Friend/Family</option>
+
+							</select>
+						</div>
+						<div class="form-item">
+							<label for="service">Please select a Service <sup>*</sup></label>
 							<select class="form-control" name="service" id="service" aria-required="true" required>
 								
-								<option class="selected" value="ecommerce">Ecommerce Website</option>
+								<option class="disabled">-- Select an option --</option>
+								<option  value="ecommerce">Ecommerce Website</option>
 								<option value="portfolio">Portfolio Website</option>
 								<option value="company">Company Website</option>
 								<option value="school">School Website</option>
 								<option value="ngo">NGO website</option>
-								<option value="other">other</option>
+								<option value="marketing"> Digital Marketing</option>
 							</select>
 						</div>
-						
+					</div>	
 					<label for="message">Please briefly describe your project <sup>*</sup></label>
 					<textarea class="form-control" name="message" id="message" placeholder="Your Message..." cols="30" rows="10" required></textarea>
 

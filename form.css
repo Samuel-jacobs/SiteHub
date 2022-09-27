@@ -22,6 +22,11 @@ label {
 	
 }
 
+.form-main {
+	border: 2px solid hsl(0, 94%, 66%);
+	padding: 30px;
+	border-radius: 5px;
+}
 .form-control {
 	border: 1px solid hsl(0, 94%, 66%);
 	color: white;
@@ -53,7 +58,7 @@ sup {
 		padding-inline: 0;
 	}
 	label {
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
 	.form-flex {
 		display: flex;

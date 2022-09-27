@@ -732,7 +732,7 @@ p {
 		justify-content: space-between;
 		padding-inline: 150px;
 		padding-top: 100px;
-		height: 100vh;
+		min-height: 100vh;
 	}
 	.banner-text {
 		width: 50%;
@@ -758,7 +758,7 @@ p {
 	#about-us {
 		display: flex;
 		padding: 100px  150px;
-		height: 100vh;
+		min-height: 100vh;
 	}
 	.about-image {
 		width: 50%;
@@ -789,7 +789,7 @@ p {
 		display: flex;
 		justify-content: space-between;
 		padding: 50px 150px;
-		height: 50vh;
+		min-height: 50vh;
 	}
 	.service-text {
 		width: 50%;
